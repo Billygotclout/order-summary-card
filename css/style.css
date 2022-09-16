@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+  --FONT:'Red Hat Display', sans-serif
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("/images/pattern-background-desktop.svg"), hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: var(--FONT);
+}
+main {
+  margin: 1rem;
+  background-color: white;
+  max-width: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.primary-image img {
+  width: 100%;
+  height: auto;
+}
+.whole-message {
+  text-align: center;
+}
+.heading {
+  margin: 20px 0;
+
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+.second-text {
+  margin-bottom: 30px;
+  font-size: 14px;
+  padding:0  50px;
+ 
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+.annual {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+}
+.plan-container {
+  display: flex;
+  flex-direction: column;
+}
+.plan {
+
+ font-weight: 900;
+ font-size: 15px;
+}
+.price{
+  
+  font-size: 13px;
+  color: hsl(224, 23%, 55%);
+}
+.link,
+.link:visited {
+  color: hsl(245, 75%, 52%);
+  font-size: 12px;
+  font-weight: 900;
+  
+}
+.link:hover {
+ color: hsla(245, 75%, 52%, 0.692);
+  text-decoration: none;
+
+}
+
+.btn {
+  padding: 1rem;
+  width: 90%;
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 20px;
+ box-shadow:  0px 7px 20px hsl(224deg 23% 55%)
+}
+.btn:hover{
+  background-color: hsla(245, 75%, 52%, 0.692);;
+}
+.cancel, .cancel:visited{
+    display: block;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+}
+.cancel:hover{
+    color: black;
+    
+}
+
+.home{
+  color: hsl(225, 100%, 94%);
+  color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  color: hsl(224, 23%, 55%);
+color:  hsl(223, 47%, 23%)
+}
+
+@media screen and (min-width:375px) {
+  body{
+    background-image: url('/images/pattern-background-desktop.svg');
+    align-items: center;
+    margin-top: 80px;
+    background-position:  top top; 
+    background-size: contain;
+  }
+}
